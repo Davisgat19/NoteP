@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      prefWidth="600" prefHeight="400"
+      fx:controller="controller.MainViewController">
+
+
+    <ListView fx:id="ListView" prefWidth="300" prefHeight="300"/>
+
+
+    <HBox>
+        <TextField fx:id="titleTextField" promptText="Title" />
+        <TextField fx:id="tagTextField" promptText="Tag" />
+    </HBox>
+    <TextArea fx:id="contentTextArea" promptText="Content" prefWidth="300" prefHeight="100"/>
+
+
+    <HBox>
+        <Button fx:id="addButton" text="Add"/>
+        <Button fx:id="editButton" text="Edit"/>
+        <Button fx:id="deleteButton" text="Delete"/>
+    </HBox>
+
+
+    <fx:include source="NoteEditorView.fxml"/>
+</VBox>

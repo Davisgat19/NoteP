@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      prefWidth="400" prefHeight="300">
+
+
+    <TextField fx:id="titleTextField" promptText="Title" />
+    <TextArea fx:id="contentTextArea" promptText="Content" prefWidth="300" prefHeight="150"/>
+
+
+    <Button fx:id="saveButton" text="Save"/>
+    <Button fx:id="discardButton" text="Discard"/>
+</VBox>
